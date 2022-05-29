@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicative Hospital</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Responsive stylesheet  -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="shortcut icon" type="image/png">
+
+</head>
+<body>
+    
+     <!-- appointment start -->
+     <section class=" animatedParent animateOnce" id="contact">
+        <div class="container padding-bottom-none">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="animated fadeInLeftShort slow delay-500 booking-cantact-img" src="img/bg/c1.png"
+                            alt="">
+                    </div>
+                    <div class="col-md-6 bg-f8 padding-tb margin-bottom-80 animated fadeInRightShort slow delay-500">
+                        <div class="booking-from">
+                            <h2>Make An <span class="color-defult">Appointment</span></h2>
+                            <div class="border-style-2 margin-bottom-30"></div>
+                            <p class="margin-bottom-30">Consectetur adipisicing elit. Id dignissimos atque debitis esse
+                                possimus, <br>fuga tenetur rem et. Vitae, repudiandae.</p>
+                            <form method="post" action="../Medicative-Hospital/php/insert.php">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" name="first_name" id="fname" class="form-control"
+                                            placeholder="First Name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="last_name" id="lname" class="form-control"
+                                            placeholder="Last Name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="subject" class="form-control"
+                                            placeholder="Input Subject" id="subject" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="date" class="form-control" placeholder="Input Date"
+                                            id="Reservation" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" name="email" class="form-control"
+                                            placeholder="Your Email Here" id="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="phone" class="form-control" placeholder="Your Phone"
+                                            id="phone" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="contact-textarea">
+                                            <textarea class="form-control" rows="6" placeholder="Wright Message"
+                                                id="message" name="message" required></textarea>
+                                            <button class="btn btn-theme" type="submit" value="Submit Form">Send
+                                                Message</button>
+                                        </div>
+                                    </div>
+                                    <div id="form-messages"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- appointment end -->
+</body>
+</html>
